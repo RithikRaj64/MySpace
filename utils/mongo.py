@@ -7,6 +7,7 @@ from schema import Entry
 
 from typing import List
 
+import streamlit as st
 from dotenv import load_dotenv
 import os
 
@@ -22,7 +23,7 @@ class DB:
     def __init__(self):
         load_dotenv()
 
-        self.client = MongoClient(os.environ.get("MONGO_URL"))
+        self.client = MongoClient(st.secrets["MONGO_URL"])
         self.db = self.client["MySpace"]
 
         self.userCollection = self.db["Users"]
