@@ -55,3 +55,13 @@ class DB:
             )
             for entry in entries
         ]
+
+    def delete_entry(self, entry: Entry) -> None:
+        self.entryCollection.delete_one(
+            {
+                "username": entry.username,
+                "content": entry.content,
+                "vibe": entry.vibe,
+                "created_at": entry.created_at,
+            }
+        )

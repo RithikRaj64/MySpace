@@ -34,5 +34,5 @@ if st.button("Make Entry"):
                 state="complete",
                 expanded=False,
         )
-        time.sleep(3)
+        time.sleep(2)
         st.switch_page("pages/My_Entries.py")
