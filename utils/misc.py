@@ -17,7 +17,7 @@ greetings = [
     "Welcome, {name}! It's time to write.",
     "Hi, {name}! Let's capture today's moments.",
     "Hey, {name}! How's your day unfolding?",
-    "Salutations, {name}! Ready to jot down your feelings?",
+    "Hey there, {name}! Ready to jot down your feelings?",
     "Good vibes, {name}! What will today's entry bring?",
     "Hello, {name}! Let's reflect on today's journey.",
     "A warm welcome, {name}! Time to write your story.",

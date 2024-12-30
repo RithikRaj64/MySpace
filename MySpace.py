@@ -97,19 +97,27 @@ if "authenticated" not in st.session_state or not st.session_state["authenticate
             st.rerun()
 
 else:
-    # with st.spinner("Creating LLM and Embedding Model instances") as spin:
-    #     if "kg" not in st.session_state:
-    #         st.session_state.kg = knowledge_graph = KG()
-
     markdown_content = """
-# Welcome to LegalFlow 🏛️  
+# 🌟 Welcome to MySpace! 🌟  
 
-**LegalFlow** is your go-to platform for understanding and navigating complex legal documents. Whether you're a legal professional or a general user, our intelligent chatbot is here to provide accurate, insightful, and easy-to-understand answers to your legal queries.  
+Hey, {name}  
 
-We aim to bridge the gap between legal complexity and accessibility. By leveraging the latest advancements in AI, our platform delivers unparalleled legal insights to empower users with accurate and actionable information.  
+This is MySpace — your little haven, your quiet corner, your safe place.  
 
-**Simplifying Laws, Empowering Decisions, LegalFlow!**  
-    """
-    st.markdown(markdown_content)
+I know life can get busy, loud, and overwhelming. That’s why I made this space for you. It’s here to hold your thoughts, your memories, and all the little moments that make up your beautiful, messy, wonderful life.  
+
+Maybe something amazing happened today, or maybe it wasn’t your best day — that’s okay too. Maybe you just want to write down a feeling, a thought, or even a tiny dream you’re scared to share out loud. Whatever it is, MySpace is here for you.  
+
+Think of it as your personal journal — one that’s always ready to listen, no matter the time or day. You don’t have to filter your words, don’t have to make it perfect. Just be you.  
+
+Because here, there are no rules. No expectations. Just your story, told your way.  
+
+So, take a deep breath. Let it out. And when you’re ready, I’m here, waiting to hear what’s on your mind.  
+
+With warmth and care,  
+Someone who thinks your story matters 💛
+"""
+    
+    st.markdown(markdown_content.replace("{name}", st.session_state.name))
 
 menu()
