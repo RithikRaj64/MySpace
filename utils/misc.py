@@ -28,3 +28,8 @@ greetings = [
 def get_personalized_greeting(name: str):
     greeting = random.choice(greetings) 
     return greeting.format(name=name)
+
+def processContent(content: str):
+    paras = content.split("\n\n")
+    processedContent = "\n>\n".join([f"> {para}" for para in paras])
+    return processedContent

@@ -4,6 +4,11 @@ from menu import menu
 from utils import DB
 from schema import User
 
+def wide_space_default():
+    st.set_page_config(layout="wide")
+
+wide_space_default()
+
 db = DB()
 
 st.session_state.db = db
