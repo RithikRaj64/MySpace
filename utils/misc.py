@@ -34,7 +34,3 @@ def processContent(content: str):
     paras = content.split("\n\n")
     processedContent = "\n>\n".join([f"> {para}" for para in paras])
     return processedContent
-
-def modifyDateZone(date: datetime):
-    date = date + timedelta(hours=5, minutes=30)
-    return date

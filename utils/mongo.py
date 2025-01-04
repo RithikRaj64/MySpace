@@ -5,9 +5,8 @@ from pymongo.database import Database
 from schema import User
 from schema import Entry
 
-from utils import modifyDateZone
-
 from typing import List
+from datetime import timedelta
 
 import streamlit as st
 from dotenv import load_dotenv
@@ -41,7 +40,7 @@ class DB:
         return User(**{**inserted_user, "_id": str(inserted_user["_id"])})
 
     def create_new_entry(self, entry: Entry) -> None:
-        entry.created_at = modifyDateZone(entry.created_at)
+        entry.created_at = entry.created_at + timedelta(hours=5, minutes=30)
         self.entryCollection.insert_one(entry.model_dump())
 
     def fetch_all_entries(self, username: str) -> List[Entry]:
