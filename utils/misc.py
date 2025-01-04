@@ -1,5 +1,6 @@
 from collections import defaultdict
 import random
+from datetime import datetime, timedelta    
 
 def group_entries_by_month(entries):
     """Group entries by month."""
@@ -33,3 +34,7 @@ def processContent(content: str):
     paras = content.split("\n\n")
     processedContent = "\n>\n".join([f"> {para}" for para in paras])
     return processedContent
+
+def modifyDateZone(date: datetime):
+    date = date + timedelta(hours=5, minutes=30)
+    return date
