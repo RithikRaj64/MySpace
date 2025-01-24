@@ -119,3 +119,4 @@ dmypy.json
 
 # Streamlit specific
 .streamlit/secrets.toml
+./test.ipynb

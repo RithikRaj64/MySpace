@@ -26,3 +26,10 @@ def render_month_entries(month, month_entries, allow_delete, db):
                 render_entry(entry, month, i, allow_delete, db)  
                 if i < len(month_entries) - 1:
                     st.markdown("---")
+
+def render_whispers(whispers):
+    for whisper in whispers:
+        st.markdown(f"📌 {whisper.topic}")
+        processed_content = processContent(whisper.content)
+        st.markdown(processed_content)
+        st.markdown("---")

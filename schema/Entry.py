@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 
-class Entry(BaseModel):
+class Thread(BaseModel):
     username: str
     content: str
     vibe: str

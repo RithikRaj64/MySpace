@@ -4,7 +4,7 @@ from datetime import datetime
 import time
 
 from menu import menu_with_redirect
-from schema import Entry
+from schema import Thread
 from utils import get_personalized_greeting
 
 menu_with_redirect()
@@ -18,20 +18,20 @@ if "personalized_greeting" not in st.session_state:
     st.session_state.personalized_greeting = get_personalized_greeting(name)
 st.header(st.session_state.personalized_greeting)
 
-content = st.text_area("Write your entry here:", "", height=200)
+content = st.text_area("Weave your thread here:", "", height=200)
 
 vibe = st.text_input("Describe your day in a few words:", "")
 
 created_at = datetime.now()
 
-if st.button("Make Entry"):
-    with st.status("Saving your memory") as status:
-        entry = Entry(username=st.session_state.username, content=content, vibe=vibe, created_at=created_at)
+if st.button("Interlace the threads"):
+    with st.status("Making your knot") as status:
+        entry = Thread(username=st.session_state.username, content=content, vibe=vibe, created_at=created_at)
         db.create_new_entry(entry)
         status.update(
-                label="Memory updated",
-                state="complete",
-                expanded=False,
+            label="Knotted your threads together",
+            state="complete",
+            expanded=False,
         )
         time.sleep(2)
-        st.switch_page("pages/My_Entries.py")
+        st.switch_page("pages/Fabric_of_Life.py")

@@ -105,19 +105,21 @@ else:
     markdown_content = """
 # 🌟 Welcome to MySpace! 🌟  
 
-Hey, {name}  
+Hey, {name}
 
-This is MySpace — your little haven, your quiet corner, your safe place.  
+This is MySpace — your little haven, your quiet corner, your safe place.
 
-I know life can get busy, loud, and overwhelming. That’s why I made this space for you. It’s here to hold your thoughts, your memories, and all the little moments that make up your beautiful, messy, wonderful life.  
+I know life can get busy, loud, and overwhelming. That's why I made this space for you. It's here to hold your thoughts, your memories, and all the little moments that make up your beautiful, messy, wonderful life.
 
-Maybe something amazing happened today, or maybe it wasn’t your best day — that’s okay too. Maybe you just want to write down a feeling, a thought, or even a tiny dream you’re scared to share out loud. Whatever it is, MySpace is here for you.  
+Maybe something amazing happened today, or maybe it wasn't your best day — that's okay too. Maybe you just want to write down a feeling, a thought, or even a tiny dream you're scared to share out loud. Whatever it is, MySpace is here for you.
 
-Think of it as your personal journal — one that’s always ready to listen, no matter the time or day. You don’t have to filter your words, don’t have to make it perfect. Just be you.  
+And now, there’s something more. Sometimes, you don’t want to record a full memory — you just need a space to let your thoughts breathe, like a quiet whisper in the wind. 
 
-Because here, there are no rules. No expectations. Just your story, told your way.  
+Think of MySpace as your personal journal — one that's always ready to listen, no matter the time or day. You don't have to filter your words, don't have to make it perfect. Just be you.
 
-So, take a deep breath. Let it out. And when you’re ready, I’m here, waiting to hear what’s on your mind.  
+Because here, there are no rules. No expectations. Just your story, told your way.
+
+So, take a deep breath. Let it out. And when you're ready, I’m here, waiting to hear what’s on your mind. 
 
 With warmth and care,  
 Someone who thinks your story matters 💛
